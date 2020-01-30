@@ -1,4 +1,4 @@
-{% set version = '1.5-4' %}
+{% set version = "1.5-5" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/sn_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/sn/sn_{{ version }}.tar.gz
-  sha256: 46677ebc109263a68f62b5cf53ec59916cda490e5bc5bbb08276757a677f8674
+  sha256: 2e913f4ef22bbaf19e5fe4588ec8643d8f5f008c51d2cf4358e285d800f3be7a
 
 build:
   merge_build_host: True  # [win]
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -45,6 +45,9 @@ about:
     for data fitting and model diagnostics, in the univariate  and the multivariate
     case.
   license_family: GPL3
+  license_file:
+    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
+    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
 
 extra:
   recipe-maintainers:
