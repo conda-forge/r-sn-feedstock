@@ -1,4 +1,4 @@
-{% set version = "1.5-5" %}
+{% set version = "1.6-0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/sn_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/sn/sn_{{ version }}.tar.gz
-  sha256: 2e913f4ef22bbaf19e5fe4588ec8643d8f5f008c51d2cf4358e285d800f3be7a
+  sha256: 9515d67c8f78f7309d2341acbfd31ddb59ce9d2c1a4bdd379e9fcb831ec8e442
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
   rpaths:
@@ -40,14 +40,12 @@ test:
 about:
   home: http://azzalini.stat.unipd.it/SN
   license: GPL-2 | GPL-3
-  summary: Build and manipulate probability distributions of the skew-normal  family and some
-    related ones, notably the skew-t family, and provide related statistical methods
-    for data fitting and model diagnostics, in the univariate  and the multivariate
-    case.
+  summary: Build and manipulate probability distributions of the skew-normal  family and some related ones, notably the skew-t family, and provide related statistical
+    methods for data fitting and model diagnostics, in the univariate  and the multivariate case.
   license_family: GPL3
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
