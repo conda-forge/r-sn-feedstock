@@ -7,7 +7,7 @@ Package license: GPL-2 | GPL-3
 
 Feedstock license: BSD 3-Clause
 
-Summary: Build and manipulate probability distributions of the skew-normal  family and some related ones, notably the skew-t family, and provide related statistical methods for data fitting and model diagnostics, in the univariate  and the multivariate case.
+Summary: Build and manipulate probability distributions of the skew-normal family and some related ones, notably the skew-t family, and provide related statistical methods for data fitting and model diagnostics, in the univariate and the multivariate case.
 
 
 
