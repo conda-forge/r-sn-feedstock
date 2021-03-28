@@ -25,12 +25,12 @@ requirements:
     - {{ posix }}zip               # [win]
   host:
     - r-base
-    - r-mnormt >=1.5_4
+    - r-mnormt >=2.0.0
     - r-numderiv
     - r-quantreg
   run:
     - r-base
-    - r-mnormt >=1.5_4
+    - r-mnormt >=2.0.0
     - r-numderiv
     - r-quantreg
 
@@ -41,7 +41,7 @@ test:
 
 about:
   home: http://azzalini.stat.unipd.it/SN
-  license: GPL-2 | GPL-3
+  license: GPL-2.0-or-later
   summary: Build and manipulate probability distributions of the skew-normal family and some related ones, notably the skew-t family, and provide related statistical methods for data fitting and model diagnostics, in the univariate and the multivariate case.
   license_family: GPL3
   license_file:
