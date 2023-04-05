@@ -1,11 +1,11 @@
-About r-sn
-==========
+About r-sn-feedstock
+====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-sn-feedstock/blob/main/LICENSE.txt)
 
 Home: http://azzalini.stat.unipd.it/SN
 
 Package license: GPL-2.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-sn-feedstock/blob/main/LICENSE.txt)
 
 Summary: Build and manipulate probability distributions of the skew-normal family and some related ones, notably the skew-t family, and provide related statistical methods for data fitting and model diagnostics, in the univariate and the multivariate case.
 
